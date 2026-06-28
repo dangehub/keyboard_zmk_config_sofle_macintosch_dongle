@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: sofle_dongle}
 layers:
-  QWERTY: ['&bootloader', ESC, '1', '2', '3', '4', '5', MUTE, MUTE, '6', '7', '8', '9', '0', BSPC, TAB, Q, W, E, R, T, Y, U, I, O, P, \, CAPS, A, S, D, F, G, '&mkp
-      LCLK', '&mkp LCLK', H, J, K, L, ;, ENTER, LSHFT, Z, X, C, V, B, PG DN, PG UP, '&msc SCRL_DOWN', '&msc SCRL_UP', N, M, ',', ., /, RSHIFT, LCTRL, LGUI, LALT,
-    SPACE, LOWER, LOWER, SPACE, '-', '=', '`']
+  QWERTY: ['&bootloader', ESC, '1', '2', '3', '4', '5', MUTE, MUTE, '6', '7', '8', '9', '0', BSPC, TAB, Q, W, E, R, T, Y, U, I, O, P, \, LEFT SHIFT, A, S, D, F, G,
+    '&mkp LCLK', '&mkp LCLK', H, J, K, L, ;, ENTER, LCTRL, Z, X, C, V, B, PG DN, PG UP, '&msc SCRL_DOWN', '&msc SCRL_UP', N, M, ',', ., /, RSHIFT, CAPSLOCK, LEFT
+      ALT, LEFT WIN, SPACE, LOWER, LOWER, SPACE, '-', '=', '`']
   LOWER:
   - '&bootloader'
   - ESC
@@ -159,10 +159,10 @@ layers:
   - Q
   - W
   - E
-  - R
-  - T
-  - Y
-  - {t: U, h: '&mkp MB3'}
+  - '&mkp RCLK'
+  - '&mkp LCLK'
+  - '&mkp LCLK'
+  - '&mkp RCLK'
   - I
   - O
   - P
@@ -172,10 +172,10 @@ layers:
   - S
   - D
   - F
-  - G
+  - '&mkp MCLK'
   - '&mkp LCLK'
   - '&mkp LCLK'
-  - H
+  - '&mkp MCLK'
   - {t: J, h: '&mkp MB1'}
   - K
   - L
